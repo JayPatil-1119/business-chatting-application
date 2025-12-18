@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search users..."
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_margin="10dp"/>
+
+    <!-- User List RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userRrcyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:listitem="@layout/user_layout" />
+
+    <!-- Group Chat Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/groupChatButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:text="Group Chat"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:cornerRadius="12dp" />
+
+</LinearLayout>
+
